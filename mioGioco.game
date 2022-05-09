@@ -1,0 +1,100 @@
+[world:Roma Post Covid]
+description	Benvenuto nella Roma post covid...anzi durante il covid :(
+start	stanza di Patrizio
+
+[room:stanza di Patrizio]
+description	La camera di Patrizio
+objects	scrivania, computer, soldi, password, letto
+links	N:corridoio
+
+[room:corridoio]
+description	Il corridoio di casa di Patrizio
+links	S:stanza di Patrizio,N:cucina,E:salone
+
+
+[room:cucina]
+description	La cucina della casa
+objects	tavolo, frigo, fornelli
+characters	Teresa
+links	S:corridoio
+
+[room:salone]
+description	Il salone di casa di Patrizio
+links	E:fuori casa,O:corridoio
+objects	mascherina,chiave macchina
+
+[room:fuori casa]
+description	Lo spazio fuori casa di Patrizio
+objects	albero, palina
+links	N:macchina blu,S:542,E:pasticceria,O:salone
+
+[room:parcheggio centro vaccinale]
+description	Parcheggio del centro vaccinale
+links	O:macchina blu,S:centro vaccinale,E:uscita
+
+[room:centro vaccinale]
+description	Il centro vaccinale per fare il vaccino contro il Covid-19
+characters	Giulia
+links	E:area attesa,N:parcheggio centro vaccinale
+
+[room:area attesa]
+description	Area di attesa dopo il vaccino
+objects	greenPass
+links	N:uscita,O:centro vaccinale
+
+[room:pasticceria]
+description	La pasticceria vicino casa
+objects	pastarella
+characters	Pasticciera
+links	O:fuori casa
+
+[room:fuori universita]
+description	L'esterno dell'universita Sapienza
+links	N:542,E:universita
+
+[room:universita]
+description	L'universita Sapienza
+characters	Guardiano gentile
+links	E:scale,O:fuori universita
+
+[room:aula esame]
+description	L'aula dove si svolge l'esame di METODOLOGIE DI PROGRAMMAZIONE
+characters	Navigli
+links	O:scale
+
+
+[links]
+macchina blu	Macchina	fuori casa	parcheggio centro vaccinale
+542	BusAtac	fuori casa	fuori universita
+uscita	Uscita	area attesa	parcheggio centro vaccinale
+scale	Scale	universita	aula esame
+
+
+
+[objects]
+scrivania	Scrivania
+computer	Computer
+tavolo	Tavolo
+frigo	Frigorifero
+fornelli	Fornelli
+albero	Albero
+palina	Palina
+pastarella	Pastarella
+carbonara	Tesoro
+soldi	Soldi
+mascherina	Mascherina
+chiave macchina	Chiave	macchina blu
+greenPass	GreenPass
+password	Password	computer
+letto	Letto
+
+
+[characters]
+Teresa	Mamma
+Giulia	Infermiere
+Pasticciera	Pasticciere	pastarella
+Guardiano gentile	LavoratoreSapienza
+Navigli	Professore	progettone Java
+
+[player]
+Patrizio	Giocatore

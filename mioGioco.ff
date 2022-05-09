@@ -1,0 +1,73 @@
+guarda  //descrive la stanza di Patrizio
+prendi soldi //prende i soldi dalla stanza
+vai n //dirà che siamo nel corridoio
+guarda
+vai n //dirà che sei in cucina 
+apri frigo
+vai S //sei in corridoio
+vai E //se in salone
+guarda
+prendi chiave macchina
+prendi mascherina
+guarda
+vai e
+guarda
+vai N
+apri macchina blu con chiave macchina //aprirà l'auto con la chiave
+vai N
+chiudi macchina blu con chiave macchina //chiude e blocca la macchina in modo che nessuno possa usarla
+guarda
+vai s // sei in centro vaccinale
+guarda
+parla con Giulia
+vai E
+prendi greenPass
+guarda
+vai N
+apri uscita
+vai N
+vai O
+apri macchina blu con chiave macchina
+prendi macchina blu
+vai O
+vai O
+vai S
+guarda
+usa computer
+prendi progettone Java da computer
+prendi password
+usa password su computer
+prendi progettone Java da computer
+parla con Teresa
+usa letto //va a dormire
+guarda
+vai N
+VAI e
+vaI E
+guarda palina //darà informazioni tra quanto arriva l'autobus
+prendi 542
+vai e //entrerà nell'università
+saluta Guardiano gentile
+guarda
+vai E
+guarda
+parla con Navigli
+Dai progettone Java a Navigli
+ringranzia Navigli
+guarda
+vai O
+vai o
+guarda
+prendi 542
+guarda
+entra in pasticceria
+guarda
+prendi pastarella
+dai soldi a Pasticciera
+saluta Pasticciera
+vai O
+entra salone
+vai O
+vai n
+dai pastarella a Teresa
+dai voto esame Metodologie di Programmazione a Teresa
